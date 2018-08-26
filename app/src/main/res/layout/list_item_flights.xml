@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <android.support.v7.widget.AppCompatImageView
+                <ImageView
                     android:id="@+id/ivFlightImage"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -68,7 +68,7 @@
                         android:textColor="@color/colorFlightTime"
                         android:text="depart"/>
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <ImageView
                         android:layout_width="40dp"
                         android:layout_height="20dp"
                         android:src="@drawable/baseline_arrow_right_alt_black_24dp"/>

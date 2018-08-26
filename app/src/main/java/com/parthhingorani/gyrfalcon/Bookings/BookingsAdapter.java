@@ -7,11 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.parthhingorani.gyrfalcon.Database;
 import com.parthhingorani.gyrfalcon.Flights.Flight;
+import com.parthhingorani.gyrfalcon.GlideApp;
 import com.parthhingorani.gyrfalcon.R;
 
 import java.util.List;
@@ -55,7 +57,7 @@ public class BookingsAdapter extends RecyclerView.Adapter<BookingsAdapter.MyView
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
         //data structures
-        AppCompatImageView ivFlightImage;
+        ImageView ivFlightImage;
         TextView tvFlightName, tvDepTime, tvArrTime, tvDuration, tvHalt, tvPrice;
 
         //initialize structures
@@ -79,8 +81,10 @@ public class BookingsAdapter extends RecyclerView.Adapter<BookingsAdapter.MyView
             tvDuration.setText(data.duration);
             tvHalt.setText(data.halt);
             tvPrice.setText(data.cost);
-            Glide.with(context)
+
+            GlideApp.with(context)
                     .load(data.airlineURL)
+                    .fitCenter()
                     .into(ivFlightImage);
         }
     }

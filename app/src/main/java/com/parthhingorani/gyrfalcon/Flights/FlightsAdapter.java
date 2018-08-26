@@ -3,6 +3,7 @@ package com.parthhingorani.gyrfalcon.Flights;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.media.Image;
 import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -10,11 +11,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.parthhingorani.gyrfalcon.Database;
+import com.parthhingorani.gyrfalcon.GlideApp;
+import com.parthhingorani.gyrfalcon.MyAppGlideModule;
 import com.parthhingorani.gyrfalcon.R;
 
 import java.util.List;
@@ -58,7 +62,7 @@ public class FlightsAdapter extends RecyclerView.Adapter<FlightsAdapter.MyViewHo
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
         //data structures
-        AppCompatImageView ivFlightImage;
+        ImageView ivFlightImage;
         TextView tvFlightName, tvDepTime, tvArrTime, tvDuration, tvHalt, tvPrice;
         Button btBook;
 
@@ -86,8 +90,9 @@ public class FlightsAdapter extends RecyclerView.Adapter<FlightsAdapter.MyViewHo
             tvPrice.setText(data.cost);
 
             //load flight image into imageview
-            Glide.with(context)
+            GlideApp.with(context)
                     .load(data.airlineURL)
+                    .fitCenter()
                     .into(ivFlightImage);
 
             //insert into db only when user confirms
