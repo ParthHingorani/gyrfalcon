@@ -1,4 +1,4 @@
-package com.parthhingorani.flyasia.Flights;
+package com.parthhingorani.gyrfalcon.Flights;
 
 //model class for flights
 public class Flight {

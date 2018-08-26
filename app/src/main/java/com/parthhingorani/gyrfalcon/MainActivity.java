@@ -1,4 +1,4 @@
-package com.parthhingorani.flyasia;
+package com.parthhingorani.gyrfalcon;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -7,10 +7,10 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import com.parthhingorani.flyasia.Bookings.BookingsFragment;
-import com.parthhingorani.flyasia.Flights.FlightsFragment;
-import com.parthhingorani.flyasia.Offers.OffersFragment;
-import com.parthhingorani.flyasia.Profile.ProfileFragment;
+import com.parthhingorani.gyrfalcon.Bookings.BookingsFragment;
+import com.parthhingorani.gyrfalcon.Flights.FlightsFragment;
+import com.parthhingorani.gyrfalcon.Offers.OffersFragment;
+import com.parthhingorani.gyrfalcon.Profile.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity {
 

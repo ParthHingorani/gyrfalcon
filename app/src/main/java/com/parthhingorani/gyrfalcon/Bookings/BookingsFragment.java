@@ -1,4 +1,4 @@
-package com.parthhingorani.flyasia.Bookings;
+package com.parthhingorani.gyrfalcon.Bookings;
 
 import android.content.Context;
 import android.net.Uri;
@@ -17,10 +17,10 @@ import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.parthhingorani.flyasia.Database;
-import com.parthhingorani.flyasia.Flights.Flight;
-import com.parthhingorani.flyasia.Flights.FlightsAdapter;
-import com.parthhingorani.flyasia.R;
+import com.parthhingorani.gyrfalcon.Database;
+import com.parthhingorani.gyrfalcon.Flights.Flight;
+import com.parthhingorani.gyrfalcon.Flights.FlightsAdapter;
+import com.parthhingorani.gyrfalcon.R;
 
 import java.util.ArrayList;
 import java.util.List;

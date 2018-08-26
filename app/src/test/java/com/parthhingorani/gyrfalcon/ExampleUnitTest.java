@@ -1,4 +1,4 @@
-package com.parthhingorani.flyasia;
+package com.parthhingorani.gyrfalcon;
 
 import org.junit.Test;
 

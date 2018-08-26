@@ -1,4 +1,4 @@
-package com.parthhingorani.flyasia.Flights;
+package com.parthhingorani.gyrfalcon.Flights;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -14,8 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.parthhingorani.flyasia.Database;
-import com.parthhingorani.flyasia.R;
+import com.parthhingorani.gyrfalcon.Database;
+import com.parthhingorani.gyrfalcon.R;
 
 import java.util.List;
 

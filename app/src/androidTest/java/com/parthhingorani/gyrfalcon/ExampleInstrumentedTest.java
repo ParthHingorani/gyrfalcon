@@ -1,4 +1,4 @@
-package com.parthhingorani.flyasia;
+package com.parthhingorani.gyrfalcon;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

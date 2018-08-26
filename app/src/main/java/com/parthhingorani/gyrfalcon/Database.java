@@ -1,4 +1,4 @@
-package com.parthhingorani.flyasia;
+package com.parthhingorani.gyrfalcon;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.parthhingorani.flyasia.Flights.Flight;
+import com.parthhingorani.gyrfalcon.Flights.Flight;
 
 import java.util.ArrayList;
 import java.util.List;

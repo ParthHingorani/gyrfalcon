@@ -1,4 +1,4 @@
-package com.parthhingorani.flyasia.Profile;
+package com.parthhingorani.gyrfalcon.Profile;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.parthhingorani.flyasia.R;
+import com.parthhingorani.gyrfalcon.R;
 
 public class ProfileFragment extends Fragment {
 

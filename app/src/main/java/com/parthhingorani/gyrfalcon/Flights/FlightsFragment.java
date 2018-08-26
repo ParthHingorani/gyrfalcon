@@ -1,4 +1,4 @@
-package com.parthhingorani.flyasia.Flights;
+package com.parthhingorani.gyrfalcon.Flights;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
@@ -20,8 +20,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.parthhingorani.flyasia.Database;
-import com.parthhingorani.flyasia.R;
+import com.parthhingorani.gyrfalcon.Database;
+import com.parthhingorani.gyrfalcon.R;
 
 import java.util.ArrayList;
 import java.util.Calendar;

@@ -1,4 +1,4 @@
-package com.parthhingorani.flyasia.Bookings;
+package com.parthhingorani.gyrfalcon.Bookings;
 
 import android.content.Context;
 import android.support.v7.widget.AppCompatImageView;
@@ -10,9 +10,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.parthhingorani.flyasia.Database;
-import com.parthhingorani.flyasia.Flights.Flight;
-import com.parthhingorani.flyasia.R;
+import com.parthhingorani.gyrfalcon.Database;
+import com.parthhingorani.gyrfalcon.Flights.Flight;
+import com.parthhingorani.gyrfalcon.R;
 
 import java.util.List;
 
