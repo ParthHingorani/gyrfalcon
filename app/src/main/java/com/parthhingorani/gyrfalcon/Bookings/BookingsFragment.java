@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -29,6 +30,7 @@ public class BookingsFragment extends Fragment {
 
     //data structures
     TextView tvError;
+    NestedScrollView nsvBookedFlights;
     BookingsAdapter flightsAdapter;
     RecyclerView rvFlights;
     List<Flight> flightsList;
@@ -53,6 +55,7 @@ public class BookingsFragment extends Fragment {
         //initialization
         tvError = view.findViewById(R.id.emsgNoBookings);
         rvFlights = view.findViewById(R.id.rvBookedFlights);
+        nsvBookedFlights = view.findViewById(R.id.nsvBookedFlights);
 
         database = new Database(getActivity());
         flightsList = new ArrayList<>();
@@ -63,6 +66,7 @@ public class BookingsFragment extends Fragment {
         populateFlights();
         flightsAdapter = new BookingsAdapter(getActivity(), flightsList, database);
         rvFlights.setAdapter(flightsAdapter);
+        rvFlights.setNestedScrollingEnabled(true);
 
         return view;
     }
@@ -76,10 +80,10 @@ public class BookingsFragment extends Fragment {
         //show error if not found
         if (flightsList == null)    {
             tvError.setVisibility(View.VISIBLE);
-            rvFlights.setVisibility(View.GONE);
+            nsvBookedFlights.setVisibility(View.GONE);
         } else {
             tvError.setVisibility(View.GONE);
-            rvFlights.setVisibility(View.VISIBLE);
+            nsvBookedFlights.setVisibility(View.VISIBLE);
         }
     }
 }

@@ -118,18 +118,27 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="6dp"
-        app:cardBackgroundColor="@color/colorFlightConfirmed"
-        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/colorPrimaryLight"
+        app:cardCornerRadius="15dp"
         app:cardElevation="4dp">
 
-        <Button
-            android:id="@+id/btBook"
+        <android.support.v7.widget.CardView
             android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:background="@color/colorTransparent"
-            android:text="@string/confirmed"
-            android:textColor="@color/colorWhite"
-            android:textSize="10sp"/>
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="12dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:background="@color/colorTransparent"
+                android:text="@string/confirmed"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="10sp"/>
+
+        </android.support.v7.widget.CardView>
 
     </android.support.v7.widget.CardView>
 
