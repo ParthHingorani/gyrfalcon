@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_flights"
+        android:icon="@drawable/baseline_flight_takeoff_black_24dp"
+        android:title="@string/title_flights" />
+
+    <item
+        android:id="@+id/navigation_bookings"
+        android:icon="@drawable/baseline_date_range_white_24dp"
+        android:title="@string/title_bookings" />
+
+    <item
+        android:id="@+id/navigation_offers"
+        android:icon="@drawable/baseline_new_releases_black_24dp"
+        android:title="@string/title_offers" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/baseline_fingerprint_white_24dp"
+        android:title="@string/title_profile" />
+
+</menu>
