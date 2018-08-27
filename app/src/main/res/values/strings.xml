@@ -13,7 +13,7 @@
     <!-- list_item_bookings.xml -->
     <string name="confirmed">Confirmed</string>
 
-    <!-- flight_search.xml -->
+    <!-- layout_flight_search.xmlrch.xml -->
     <string name="search_flight">Search your\nflight:</string>
 
     <!-- flight_listing.xml -->
@@ -25,4 +25,7 @@
 
     <!-- fragment_bookings.xml -->
     <string name="offers">Offers for you:</string>
+
+    <!-- activity_login.xml -->
+    <string name="auth">Kindly proceed with one of the following options:</string>
 </resources>

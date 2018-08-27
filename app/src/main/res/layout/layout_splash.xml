@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparent">
+
+    <TextView
+        android:id="@+id/tvGyrfalcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="36sp"
+        android:text="@string/app_full_name"/>
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvGyrfalcon"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:text="Welcome to"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/tvWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="18dp"
+        android:src="@drawable/baseline_flight_white_48dp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutAuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:text="LOGIN"/>
+
+        <Button
+            android:id="@+id/btRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:text="REGISTER"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutAuth"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="18dp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:text="@string/auth"/>
+</RelativeLayout>
