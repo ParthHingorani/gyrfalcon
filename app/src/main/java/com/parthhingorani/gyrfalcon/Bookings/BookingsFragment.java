@@ -66,6 +66,7 @@ public class BookingsFragment extends Fragment {
         populateFlights();
         flightsAdapter = new BookingsAdapter(getActivity(), flightsList, database);
         rvFlights.setAdapter(flightsAdapter);
+
         rvFlights.setNestedScrollingEnabled(true);
 
         return view;

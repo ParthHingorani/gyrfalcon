@@ -6,7 +6,6 @@
     tools:context=".Offers.OffersFragment">
 
     <android.support.v4.widget.NestedScrollView
-        android:id="@+id/nsvOffers"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -23,8 +22,11 @@
                 android:textColor="@color/colorPrimaryLight"
                 android:text="@string/offers" />
 
-            <include
-                layout="@layout/list_item_offers"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvOffers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparent"/>
 
         </LinearLayout>
 
